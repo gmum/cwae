@@ -14,14 +14,14 @@ This repository contains an implementation of Cramer-Wold AutoEncoder(CWAE), pro
 # Conducting the experiments
 In order to reproduce CWAE results on MNIST and CIFAR-10 experiments as described in the original paper execute the following commands:
 
-    python -m train_models.py cwae mnist 500 20
-    python -m train_models.py cwae cifar10 500 64
+    python train_models.py cwae mnist 500 20
+    python train_models.py cwae cifar10 500 64
 
 ## Other options
 The code allows manipulating some of the parameters(for example not using other versions of the model, changing learning rate or optimizers) for more info see the list of available arguments in src/train_models.py file
 
 # Datasets
-The repository allows reproducing experiments on MNIST and CIFAR10 dataset. In order to run experiments on CelebA dataset one must download it by themselves and import in a similar manner as other datasets by implementing load_celeba_data in src/dataset_loaders.py
+The repository allows reproducing experiments on MNIST and CIFAR10 dataset. In order to run experiments on CelebA dataset one must download it and import in a similar manner as other datasets by implementing load_celeba_data in src/dataset_loaders.py
 
 # Environment
 We created the repository using the following configuration:
